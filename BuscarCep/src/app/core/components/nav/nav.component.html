@@ -1,0 +1,16 @@
+
+<nav class="blue">
+    <div class="nav-wrapper">
+        <a  (click)="logout()"  class="brand-logo right" style="margin-right: 10px;">Sair</a>
+        <a data-target="mobile-demo" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+            <li routerLinkActive="active"><a routerLink="">Home</a></li>
+            <li routerLinkActive="active"><a routerLink="/buscar-cep">Buscar CEP</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li routerLinkActive="active"><a routerLink="/home" >Home</a></li>
+    <li routerLinkActive="active"><a routerLink="/buscar-cep">Buscar CEP</a></li>
+</ul>
